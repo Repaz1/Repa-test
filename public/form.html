@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <titel>
+            <meta name="csrf-token" content="{{ csrf_token() }}">
+        </titel>
+    </head>
+    <body>
+        <form action="/pages" method="POST">
+
+    
+
+            NAME:
+            <input type="text" name ="param"/><br />
+            Comment:<br />
+            <textarea name="text"></textarea>
+            
+            <br />
+            <input type="submit" value="Добавить">
+        </form>
+    </body>
+</html>
